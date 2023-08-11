@@ -2,38 +2,34 @@ export const bo2MapSchema = {
     type: 'array',
     items: {
       properties: {
-        map: {
-          properties: {
             name: {
-              type: 'string'
+                type: 'string'
             },
             bundle: {
-              type: 'string'
+                type: 'string'
             },
             location: {
-              type: 'string'
+                type: 'string'
             },
             date: {
-              type: 'string'
+                type: 'string'
             },
             terrain: {
-              type: 'string'
+                type: 'string'
             },
             modes: {
-              type: 'string'
+                type: 'string'
             },
             typeOfCombat: {
-              type: 'string'
+                type: 'string'
             },
             icon: {
-              type: 'string'
+                type: 'string'
             },
             hudIcon: {
-              type: 'string'
+                type: 'string'
             }
-          }
         }
-      }
     }
   }
   

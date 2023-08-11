@@ -2,8 +2,6 @@ export const bo2WeaponSchema = {
     type: 'array',
     items: {
       properties: {
-        weapon: {
-          properties: {
             name: {
               type: 'string'
             },
@@ -49,9 +47,7 @@ export const bo2WeaponSchema = {
             hudIcon: {
               type: 'string'
             }
-          }
         }
-      }
     }
   }
   
