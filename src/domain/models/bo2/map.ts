@@ -1,5 +1,4 @@
 export interface Bo2MapModel {
-    id: string
     name: string,
     bundle: string,
     location: string,

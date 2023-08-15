@@ -1,5 +1,4 @@
 export interface Bo2WeaponModel {
-    id: string
     name: string,
     weaponClass: string,
     damage: string,
