@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Bo2Attachment {
+  id         String   @id @map("_id")
+  name       String
+  gunType    String[]
+  unlockedAt String[]
+  icon       String
+}
+
+model Bo2Grenade {
+  id   String @id @map("_id")
+  name String
+  type String
+}
+
+model Bo2Map {
+  id           String @id @map("_id")
+  name         String
+  bundle       String
+  location     String
+  date         String
+  terrain      String
+  modes        String
+  typeOfCombat String
+  icon         String
+  hudIcon      String
+}
+
+model Bo2Perk {
+  id          String @id @map("_id")
+  name        String
+  category    String
+  description String
+  unlockedAt  String
+  icon        String
+}
+
+model Bo2Scorestreak {
+  id          String @id @map("_id")
+  name        String
+  score       String
+  description String
+  unlockedAt  String
+  icon        String
+}
+
+model Bo2Weapon {
+  id          String @id @map("_id")
+  name        String
+  weaponClass String
+  unlocked    String
+  icon        String
+  hudIcon     String
+}
+
+model Bo2Wildcard {
+  id          String @id @map("_id")
+  name        String
+  description String
+  unlockedAt  String
+  icon        String
+}
