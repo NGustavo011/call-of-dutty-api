@@ -1,13 +1,13 @@
-version: '3'
+version: "3.7"
 
 services:
- mongo:
-    image: mongo:3
-    container_name: mongo
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: pato
-      MONGO_INITDB_ROOT_PASSWORD: pato11
-      MONGO_INITDB_DATABASE: db
-    ports:
-      - 27017:27017
+    cod:
+        image: postgres
+        container_name: database_cod
+        restart: always
+        ports: 
+            - 5432:5432
+        environment:
+            - POSTGRES_USER=pato
+            - POSTGRES_PASSWORD=pato11
+            - POSTGRES_DB=cod

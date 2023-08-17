@@ -6,12 +6,12 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
 model Bo2Attachment {
-  id         String   @id @map("_id")
+  id         String   @id @default(uuid()) @map("_id")
   name       String
   gunType    String[]
   unlockedAt String[]
@@ -19,13 +19,13 @@ model Bo2Attachment {
 }
 
 model Bo2Grenade {
-  id   String @id @map("_id")
+  id   String @id @default(uuid()) @map("_id")
   name String
   type String
 }
 
 model Bo2Map {
-  id           String @id @map("_id")
+  id           String @id @default(uuid()) @map("_id")
   name         String
   bundle       String
   location     String
@@ -38,7 +38,7 @@ model Bo2Map {
 }
 
 model Bo2Perk {
-  id          String @id @map("_id")
+  id          String @id @default(uuid()) @map("_id")
   name        String
   category    String
   description String
@@ -47,7 +47,7 @@ model Bo2Perk {
 }
 
 model Bo2Scorestreak {
-  id          String @id @map("_id")
+  id          String @id @default(uuid()) @map("_id")
   name        String
   score       String
   description String
@@ -56,7 +56,7 @@ model Bo2Scorestreak {
 }
 
 model Bo2Weapon {
-  id          String @id @map("_id")
+  id          String @id @default(uuid()) @map("_id")
   name        String
   weaponClass String
   unlocked    String
@@ -65,7 +65,7 @@ model Bo2Weapon {
 }
 
 model Bo2Wildcard {
-  id          String @id @map("_id")
+  id          String @id @default(uuid()) @map("_id")
   name        String
   description String
   unlockedAt  String
