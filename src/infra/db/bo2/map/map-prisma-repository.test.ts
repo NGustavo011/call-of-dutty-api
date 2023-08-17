@@ -43,7 +43,7 @@ describe('Bo2MapPrismaRepository', () => {
 			expect(maps).toBeTruthy();
 			expect(maps?.length).toBe(1);
 		});
-		test('Deve retornar um mapa pelo nome e tipo', async () => {
+		test('Deve retornar um mapa pelo nome e bundle', async () => {
 			const sut = makeSut();
 			await mockPrismaBo2Maps();
 			const maps = await sut.get({
