@@ -53,7 +53,7 @@ describe('Bo2GrenadePrismaRepository', () => {
 			expect(grenades).toBeTruthy();
 			expect(grenades?.length).toBe(1);
 		});
-		test('Não deve retornar um attachment se as condições não condizerem com tal', async () => {
+		test('Não deve retornar uma granada se as condições não condizerem com tal', async () => {
 			const sut = makeSut();
 			await mockPrismaBo2Grenades();
 			const grenades = await sut.get({
