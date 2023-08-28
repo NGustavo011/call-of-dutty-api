@@ -1,6 +1,6 @@
-# Call of Duty API (call-of-duty-api)
+# Call of Dutty API (call-of-dutty-api)
 
-The Call of Duty API provides routes to access general information about the multiplayer modes in the Call of Duty game series. The application is focused on a robust implementation of the Clean Architecture. You can explore and interact with the API through the available routes and also view the documentation on Swagger UI accessible via `/api-docs`.
+The Call of Dutty API provides routes to access general information about the multiplayer modes in the Call of Duty game series. The application is focused on a robust implementation of the Clean Architecture. You can explore and interact with the API through the available routes and also view the documentation on Swagger UI accessible via `/api-docs`.
 
 ## Installation
 
